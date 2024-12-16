@@ -1,12 +1,11 @@
 html {
-  font-family: "Montserrat", sans-serif;
   background: #2a2b2d;
 }
 
 .container {
   display: grid;
-  margin: auto;
-  margin-top: 200px;
+  margin: 200px auto;
+  font-family: "Montserrat", sans-serif;
   border-radius: 15px;
   background: #5a5c68;
   width: 500px;
@@ -22,14 +21,18 @@ html {
   border-radius: 20px;
   grid-column-start: 1;
   grid-column-end: 5;
+  font-size: 100px;
+  text-align: right;
+  color: #2a2b2d;
 }
 
 .btn,
 .btn-operation {
-  font-family: "Montserrat", sans-serif;
+  border: none;
   font-size: 60px;
   border-radius: 15px;
   color: #fff;
+  cursor: pointer;
 }
 
 .btn {
@@ -42,7 +45,14 @@ html {
 
 .btn:hover,
 .btn-operation:hover {
-  transition: all 0.5s ease-out;
-  background: hsl(75, 94%, 57%);
-  color: #3d4049;
+  transition: color 0.5s;
+  color: #c4f82a;
+}
+
+.btn:active,
+.btn-operation:active {
+  box-shadow: 13px 10px 15px -9px rgba(42, 43, 43, 0.6);
+  transition: background-color 0.5s, color 0.5s;
+  background-color: #c4f82a;
+  color: #2a2b2d;
 }
