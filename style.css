@@ -1,0 +1,48 @@
+html {
+  font-family: "Montserrat", sans-serif;
+  background: #2a2b2d;
+}
+
+.container {
+  display: grid;
+  margin: auto;
+  margin-top: 200px;
+  border-radius: 15px;
+  background: #5a5c68;
+  width: 500px;
+  height: 600px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.result {
+  background: #c1d797;
+  border-radius: 20px;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.btn,
+.btn-operation {
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.btn {
+  background: #3d4049;
+}
+
+.btn-operation {
+  background: #bcc1c7;
+}
+
+.btn:hover,
+.btn-operation:hover {
+  transition: all 0.5s ease-out;
+  background: hsl(75, 94%, 57%);
+  color: #3d4049;
+}
